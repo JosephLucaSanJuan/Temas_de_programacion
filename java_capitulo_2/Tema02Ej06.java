@@ -6,8 +6,8 @@ public class Tema02Ej06 {
     double baseImp = Double.parseDouble(System.console().readLine());
 
     double IVA = 0.21;
-    System.out.println("\nIVA " + IVA);
+    System.out.println("IVA   " + IVA);
     double factura = baseImp*IVA;
-    System.out.println(factura);
+    System.out.println("Total "+ factura);
   }
 }
