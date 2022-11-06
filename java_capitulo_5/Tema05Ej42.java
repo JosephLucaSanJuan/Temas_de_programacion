@@ -18,16 +18,17 @@ public class Tema05Ej42 {
     
     for (int i = n; i < n+5; i++) {
       esPrimo=true;
-      for (int j = 0; j < i/2; j++) {
+      for (int j = 2; j <= i/2; j++) {
         if ((i%j)==0) {
           esPrimo=false;
         }
       }
       if (esPrimo) {
-        System.out.println(n+" es primo.");
+        System.out.println(i+" es primo.");
       } else {
-        System.out.println(n+" es primo.");
+        System.out.println(i+" no es primo.");
       }
     }
+    sc.close();
   }
 }
