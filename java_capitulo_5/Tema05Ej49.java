@@ -14,8 +14,8 @@ public class Tema05Ej49 {
     Scanner sc = new Scanner(System.in);
     int n = 0;
     int cuentaNum = 0;
-    int max = 0;
-    int min = 0;
+    int max = Integer.MIN_VALUE;
+    int min = Integer.MAX_VALUE;
     int suma = 0;
     boolean esPrimo = true;
 
@@ -30,19 +30,20 @@ public class Tema05Ej49 {
         //System.out.print(i+" ");
       }
 
-      if (!esPrimo) {
+      if (n==1 || !esPrimo) {
         cuentaNum++;
         suma+=n;
         if (n>max) {
           max = n;
-        } else if (n>min) {
+        } else if (n<min) {
           min=n;
         }/**/
       }
-    } while (!esPrimo);
+    } while (n==1 || !esPrimo);
     System.out.println("Has introducido "+cuentaNum+" números enteros.");
     System.out.println("Máximo: "+max);
     System.out.println("Mínimo: "+min);
-    System.out.println("Media: " + (double)(suma/2));
+    System.out.println("Media: " + (double)(suma/cuentaNum));
+    sc.close();
   }
 }

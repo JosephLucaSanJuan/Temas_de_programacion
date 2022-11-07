@@ -32,7 +32,6 @@ public class Tema05Ej43 {
       n/=10;
       longNum++;
     }
-    System.out.println("Números al revés: " + num );
     System.out.println("Nª de cifras: "+ longNum);
 
     for (int i = 0; i < longNum; i++) {
