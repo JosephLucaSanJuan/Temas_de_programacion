@@ -11,12 +11,12 @@ public class T01Ejercicio05 {
 
     System.out.printf("| %-11s| %-11s| %-11s| %-11s| %-11s|\n", "Lunes","Martes","Miercoles","Jueves","Viernes");
     System.out.println("------------------------------------------------------------------");
-    System.out.printf("| %-11s| %-11s| %-11s| %-11s| %-11s|\n", "PROG","SInf","ED","PROG","FOL");
-    System.out.printf("| %-11s| %-11s| %-11s| %-11s| %-11s|\n", "PROG","SInf","ED","PROG","FOL");
-    System.out.printf("| %-11s| %-11s| %-11s| %-11s| %-11s|\n", "LM","SInf","PROG","LM","FOL");
+    System.out.printf("|"+morado+" %-11s|"+azul+" %-11s|"+amarillo+" %-11s|"+morado+" %-11s|"+verde+" %-11s|\n", "PROG","SInf","ED","PROG","FOL");
+    System.out.printf("|"+morado+" %-11s|"+azul+" %-11s|"+amarillo+" %-11s|"+morado+" %-11s|"+verde+" %-11s|\n", "PROG","SInf","ED","PROG","FOL");
+    System.out.printf("|"+rojo+" %-11s|"+azul+" %-11s|"+morado+" %-11s|"+rojo+" %-11s|"+verde+" %-11s|\n", "LM","SInf","PROG","LM","FOL");
     System.out.printf("\n");
-    System.out.printf("| %-11s| %-11s| %-11s| %-11s| %-11s|\n", "LM","PROG","PROG","LM","SINF");
-    System.out.printf("| %-11s| %-11s| %-11s| %-11s| %-11s|\n", "BD","PROG","BD","BD","SInf");
-    System.out.printf("| %-11s| %-11s| %-11s| %-11s| %-11s|\n", "BD","ED","BD","BD","SInf");
+    System.out.printf("|"+rojo+" %-11s|"+morado+" %-11s|"+morado+" %-11s|"+rojo+" %-11s|"+azul+" %-11s|\n", "LM","PROG","PROG","LM","SINF");
+    System.out.printf("|"+naranja+" %-11s|"+morado+" %-11s|"+naranja+" %-11s|"+naranja+" %-11s|"+azul+" %-11s|\n", "BD","PROG","BD","BD","SInf");
+    System.out.printf("|"+naranja+" %-11s|"+amarillo+" %-11s|"+naranja+" %-11s|"+naranja+" %-11s|"+azul+" %-11s|\n", "BD","ED","BD","BD","SInf");
   }
 }

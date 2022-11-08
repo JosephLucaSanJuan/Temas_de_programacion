@@ -14,25 +14,31 @@ public class Tema05Ej58 {
     Scanner sc = new Scanner(System.in);
     System.out.print("Introduce un número: ");
     long n = sc.nextLong();
-    int longNum=0;
     long num = n;
-    int suma=0;
+    long numInv = 0;
+    int longNum=0;
     int dig = 0;
+    double suma=0;
     double media = 0;
 
-    System.out.print("Dígitos: ");
     while (num>0) {
+      numInv = (numInv*10)+(num%10);
       num/=10;
-      dig = (int)num%10;
-      if (num>0) {
-        System.out.print(dig+" ");
-        suma+=dig;
-      }
       longNum++;
     }
+
+    System.out.print("Dígitos: ");
+    for (int i = 0; i < longNum; i++) {
+      dig = (int)numInv%10;
+      numInv/=10;
+      System.out.print(dig+" ");
+      suma+=(double)dig;
+    }
+    
     media = (double)(suma/longNum);
     System.out.println("\n"+longNum+"\n"+suma);
     System.out.println("Media: "+media);
-    System.out.printf("Media: %f", media);
+    System.out.printf("Media: %.3f", media);
+    sc.close();
   }
 }
