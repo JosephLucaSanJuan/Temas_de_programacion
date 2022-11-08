@@ -18,7 +18,6 @@ public class Tema05Ej51 {
     long num = n;
     int longNum = 0;
     long numInv = 0;
-    int cerosyochos = 0;
     int dig = 0;
     int cuenta = 0;
     long loqueQueda = 0;
@@ -50,7 +49,8 @@ public class Tema05Ej51 {
     if (loqueQueda==n) {
       System.out.println("\nEl gusano numérico no se ha comido ningún dígito.");
     } else {
-      System.out.println("\nDespués de haber sido comido por el gusano métrico se queda en " + (long)(loqueQueda/Math.pow(10, cuenta)));
+      System.out.println("\nDespués de haber sido comido por el gusano métrico se queda en " + (long)(loqueQueda/Math.pow(10, cuenta-1)));
     }
+    sc.close();
   }
 }
