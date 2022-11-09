@@ -14,14 +14,8 @@ public class Tema04Ej17 {
     Scanner sc = new Scanner(System.in);
     System.out.print("Introduce un número: ");
     int n = sc.nextInt();
-    int div = 0;
 
-    if (n >= 10) {
-      for (int i = 0; i <= 10; i++) {
-        
-      }
-    } else {
-      System.out.println("La última cifra del número es " + n);
-    }
+    System.out.printf("La última cifra del número es %d.", (n%10));
+    sc.close();
   }
 }

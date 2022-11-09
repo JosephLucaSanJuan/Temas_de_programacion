@@ -14,9 +14,9 @@ public class Tema04Ej15 {
     Scanner sc = new Scanner(System.in);
     System.out.print("Introduce el carácter con el que quieres contstruir la pirámide: ");
     String car = sc.nextLine();
+    System.out.println("1. Arriba\n2. Abajo\n3. Izquierda\n4. Derecha");
     System.out.print("Indica en qué dirección quieres que apunte el vértice de la pirámide: ");
     int dir = sc.nextInt();
-    System.out.println("1. Arriba\n2. Abajo\n3. Izquierda\n4. Derecha");
 
     switch (dir) {
       case 1:
@@ -58,5 +58,6 @@ public class Tema04Ej15 {
       default:
         break;
     }
+    sc.close();
   }
 }
