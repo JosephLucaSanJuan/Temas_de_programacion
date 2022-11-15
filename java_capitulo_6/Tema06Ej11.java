@@ -43,10 +43,10 @@ public class Tema06Ej11 {
         cuentaSuspensos++;
       }
     }
-    System.out.println("\nNº de sobresalientes "+cuentaSobresalientes);
-    System.out.println("Nº de notables "+cuentaNotables);
-    System.out.println("Nº de bienes "+cuentaBienes);
-    System.out.println("Nº de suficiente "+cuentaSuficientes);
-    System.out.println("Nº de suspenso "+cuentaSuspensos);
+    System.out.println("\nNº de sobresalientes: "+cuentaSobresalientes);
+    System.out.println("Nº de notables: "+cuentaNotables);
+    System.out.println("Nº de bienes: "+cuentaBienes);
+    System.out.println("Nº de suficientes: "+cuentaSuficientes);
+    System.out.println("Nº de suspensos: "+cuentaSuspensos);
   }
 }

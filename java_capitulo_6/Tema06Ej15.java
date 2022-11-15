@@ -10,7 +10,8 @@ public class Tema06Ej15 {
   public static void main(String[] args) {
     String nota = "";
     int cuentaCompas = 0;
-    int numCompas = (int)(Math.random()*6+1);
+    String nota1 = "";
+    int numCompas = (int)(Math.random()*7+1)*4;
     
     while (cuentaCompas<numCompas) {
       int numNota = (int)(Math.random()*7+1);
@@ -42,13 +43,20 @@ public class Tema06Ej15 {
           default:
             break;
         }
-        
+
         System.out.print(nota+" ");
+        if (cuentaCompas==0) {
+          nota1 = nota;
+        }
+        if (cuentaCompas==numCompas-1) {
+          nota = nota1;
+        }
+        cuentaCompas++;
       }
       if (cuentaCompas<numCompas-1) {
         System.out.print("| ");
       }
-      cuentaCompas++;
+      
     }
     System.out.println("||");
     System.out.println(numCompas);
