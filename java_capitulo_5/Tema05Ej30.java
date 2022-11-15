@@ -150,9 +150,9 @@ public class Tema05Ej30 {
         } while (!horaOK);
       }
     } while (!correcto);
-    System.out.print("Entre las " + hora1 + ":00 del " + diaInicio);
-    System.out.print(" y las "+hora2+":00 del "+diaFin);
-    System.out.println(" hay "+(((dia2*24)+hora2)-((dia1*24)+hora1))+" horas.");
+    System.out.printf("Entre las %d:00 del %s", hora1, diaInicio);
+    System.out.printf(" y las %d:00 del %s", hora2, diaFin);
+    System.out.printf(" hay %d horas.",((dia2*24)+hora2)-((dia1*24)+hora1));
     sc.close();
   }
 }
