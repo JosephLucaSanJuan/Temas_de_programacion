@@ -15,7 +15,9 @@ public class Tema06Ej17 {
     int alto = sc.nextInt();
     System.out.print("Introduce la anchura de la pecera (mínimo 4): ");
     int ancho = sc.nextInt();
-    int pez = 0;
+    int pos = 0;
+    int nivel = 0;
+    pos = (int)(Math.random()*(alto-2)*(ancho-2));
 
     for (int i = 0; i < ancho; i++) {
       System.out.print("*");
@@ -25,12 +27,12 @@ public class Tema06Ej17 {
     for (int i = 0; i < alto-2; i++) {
       System.out.print("*");
       for (int j = 0; j < ancho-2; j++) {
-        pez = (int)(Math.random()*(ancho-2));
-        if (i==pez) {
+        if (nivel==pos) {
           System.out.print("&");
         } else {
           System.out.print(" ");
         }
+        nivel++;
       }
       System.out.println("*");
     }
@@ -38,5 +40,6 @@ public class Tema06Ej17 {
     for (int i = 0; i < ancho; i++) {
       System.out.print("*");
     }
+    sc.close();
   }
 }
