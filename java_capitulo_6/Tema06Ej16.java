@@ -13,7 +13,7 @@ public class Tema06Ej16 {
     int figura2 = 0;
     int figura3 = 0;
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 1; i <= 3; i++) {
       figura = (int)(Math.random()*5+1);
       switch (figura) {
         case 1:

@@ -14,20 +14,18 @@ public class Tema06Ej20 {
     System.out.print("Indica la capacidad de la cuba en litros: ");
     int capacidad = sc.nextInt();
     int cantidad = 0;
-    int nivel = capacidad;
+    int nivel = 0;
 
-    while (nivel>0) {
-      cantidad = (int)(Math.random()*capacidad);
-      System.out.print("*");
-      if (nivel>=(capacidad-cantidad)) {
-        System.out.print("====");
+    for (int i = 0; i<capacidad; i++) {
+      cantidad = (int)(Math.random()*capacidad)+1;
+      if (i<(capacidad-cantidad)) {
+        System.out.println("*====*");
       } else {
-        System.out.print("    ");
+        System.out.println("*    *");
       }
-      System.out.println("*");
-      nivel++;
     }
     System.out.println("******");
+    System.out.println(nivel);
     System.out.printf("La cuba tiene una capacidad de %d litros y contiene %d litros de agua.",capacidad,cantidad);
     sc.close();
   }

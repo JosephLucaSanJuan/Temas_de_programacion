@@ -14,26 +14,26 @@ public class Tema06Ej18 {
     while (!diferentes) {
       diferentes=false;
 
-      for (int i = 0; i < 3; i++) {
+      for (int i = 1; i <= 3; i++) {
         numColor = (int)(Math.random()*6+1);
         switch (numColor) {
           case 1:
-            System.out.println("rojo");
+            System.out.print("\033[0;91m rojo");
             break;
           case 2:
-            System.out.println("azul");
+            System.out.print("\033[0;34m azul");
             break;
           case 3:
-            System.out.print("amarillo");
+            System.out.print("\033[0;32m amarillo");
             break;
           case 4:
-            System.out.print("verde");
+            System.out.print("\033[0;36m verde");
             break;
           case 5:
-            System.out.print("naranja");
+            System.out.print("\033[0;33m naranja");
             break;
           case 6:
-            System.out.print("violeta");
+            System.out.print("\033[0;95m violeta");
             break;
           default:
             break;
@@ -54,8 +54,9 @@ public class Tema06Ej18 {
         }
         System.out.print(" ");
       }
+      System.out.println();
 
-      if (color1!=color2 || color2!=color3 || color1!=color3) {
+      if (color1!=color2 && color2!=color3 && color1!=color3) {
         diferentes=true;
       } else {
         diferentes=false;
