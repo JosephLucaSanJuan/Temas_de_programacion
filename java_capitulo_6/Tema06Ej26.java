@@ -16,7 +16,7 @@ public class Tema06Ej26 {
     System.out.print("Introduce la altura de la tableta: ");
     int alto = sc.nextInt();
     int linea = 0;
-    int mordisco = (int)(Math.random()*(ancho*alto));
+    int mordisco = (int)(Math.random()*(ancho*2+(alto-2)*2));
 
     for (int j = 0; j < alto; j++) {
       
