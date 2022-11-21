@@ -12,11 +12,11 @@ public class Tema06Ej28 {
     System.out.printf("Altura: %d\n",alt);
 
     System.out.println("*    *   ****   *        ****");
-    for (int i = 0; i<alt/2; i++) {
+    for (int i = 0; i<alt/2-1; i++) {
       System.out.println("*    *  *    *  *       *    *");
     }
     System.out.println("******  *    *  *       ******");
-    for (int i = 0; i<alt/2; i++) {
+    for (int i = 0; i<alt/2-1; i++) {
       System.out.println("*    *  *    *  *       *    *");
     }
     System.out.print("*    *   ****   ******  *    *");

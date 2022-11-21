@@ -51,8 +51,8 @@ public class Tema06Ej29 {
 
     System.out.println("\nPrevisión del tiempo para mañana");
     System.out.println("--------------------------------");
-    System.out.printf("Temperatura máxima: %d\n",tempMax);
-    System.out.printf("Temperatura mínima: %d\n",tempMin);
+    System.out.printf("Temperatura máxima: %dºC\n",tempMax);
+    System.out.printf("Temperatura mínima: %dºC\n",tempMin);
     System.out.println(NubSol);
     sc.close();
   }
