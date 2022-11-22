@@ -6,7 +6,7 @@
  */
 package java_capitulo_7;
 
-public class Tema06Ej01 {
+public class Tema07Ej01 {
   public static void main(String[] args) {
     int [] num = new int[12];
 

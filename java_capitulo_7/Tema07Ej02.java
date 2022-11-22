@@ -6,7 +6,7 @@
  */
 package java_capitulo_7;
 
-public class Tema06Ej02 {
+public class Tema07Ej02 {
   public static void main(String[] args) {
     String simbolo[] = new String[10];
 

@@ -8,7 +8,7 @@ package java_capitulo_7;
 
 import java.util.Scanner;
 
-public class Tema06Ej03 {
+public class Tema07Ej03 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int n[] = new int[10];
