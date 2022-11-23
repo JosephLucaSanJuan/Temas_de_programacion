@@ -29,7 +29,7 @@ public class Tema06Ej31 {
         int primeraSuma = suma;
         boolean fin = false;
         do {
-          System.out.print("\nContinue jugando.\nPulse INTRO para tirar los dados.");
+          System.out.println("\nContinue jugando.\nPulse INTRO para tirar los dados.");
           sc.nextLine();
           dado1 = (int)(Math.random()*6)+1;
           dado2 = (int)(Math.random()*6)+1;
@@ -40,7 +40,7 @@ public class Tema06Ej31 {
             System.out.println("Lo siento. Ha perdido todo su dinero.");
             fin = true;
           } else if (suma==primeraSuma) {
-            System.out.println("Enhorabuena! ¡Has ganado otros"+dinero*2+"$.");
+            System.out.println("Enhorabuena! ¡Has ganado otros "+dinero*2+"$.");
             System.out.println("Tienes "+dinero*2+"$");
             fin = true;
           } else {

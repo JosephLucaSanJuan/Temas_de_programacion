@@ -20,7 +20,7 @@ public class Tema06Ej16 {
           System.out.print("corazón");
           break;
         case 2:
-          System.out.print("diamnate");
+          System.out.print("diamante");
           break;
         case 3:
           System.out.print("herradura");

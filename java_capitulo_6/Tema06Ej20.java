@@ -13,15 +13,14 @@ public class Tema06Ej20 {
     Scanner sc = new Scanner(System.in);
     System.out.print("Indica la capacidad de la cuba en litros: ");
     int capacidad = sc.nextInt();
-    int cantidad = 0;
+    int cantidad = (int)(Math.random()*capacidad)+1;
     int nivel = 0;
 
     for (int i = 0; i<capacidad; i++) {
-      cantidad = (int)(Math.random()*capacidad)+1;
       if (i<(capacidad-cantidad)) {
-        System.out.println("*====*");
-      } else {
         System.out.println("*    *");
+      } else {
+        System.out.println("*====*");
       }
     }
     System.out.println("******");
