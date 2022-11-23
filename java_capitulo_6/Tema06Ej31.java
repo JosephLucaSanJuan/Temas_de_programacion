@@ -40,7 +40,7 @@ public class Tema06Ej31 {
             System.out.println("Lo siento. Ha perdido todo su dinero.");
             fin = true;
           } else if (suma==primeraSuma) {
-            System.out.println("Enhorabuena! ¡Has ganado otros "+dinero*2+"$.");
+            System.out.println("Enhorabuena! ¡Has ganado otros "+dinero+"$.");
             System.out.println("Tienes "+dinero*2+"$");
             fin = true;
           } else {
