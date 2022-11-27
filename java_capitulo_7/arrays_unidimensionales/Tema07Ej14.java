@@ -4,7 +4,7 @@
  * 
  * @author Joseph Luca san Juan Thomspson
  */
-package java_capitulo_7;
+package java_capitulo_7.arrays_unidimensionales;
 
 import java.util.Scanner;
 
