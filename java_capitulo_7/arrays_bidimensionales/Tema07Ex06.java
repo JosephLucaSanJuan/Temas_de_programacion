@@ -1,12 +1,13 @@
 /**
  * Tema07
- * 3º Escribe un array bidimensional y averigua sus valores máximos y mínimos.
+ * 3º Escribe un array bidimensional (sin repetir valores)
+ * y averigua sus valores máximos y mínimos.
  * 
  * @author Joseph Luca san Juan Thomspson
  */
 package java_capitulo_7.arrays_bidimensionales;
 
-public class Tema07Ex05 {
+public class Tema07Ex06 {
   public static void main(String[] args) {
     int array[][] = new int[6][10];
     int maxValor = Integer.MIN_VALUE;
@@ -27,6 +28,7 @@ public class Tema07Ex05 {
       for (int j = 0; j < 10; j++) {
         array[i][j] = (int)(Math.random()*1001);
         System.out.printf("%5d  |",array[i][j]);
+
         if (array[i][j]>maxValor) {
           maxValor = array[i][j];
           filMax = i;
@@ -36,6 +38,20 @@ public class Tema07Ex05 {
           filMin = i;
           colMin = j;
         }
+
+        int pos = 0;
+        boolean repetido = false;
+        int valor = 0;
+        do {
+          repetido = false;
+          valor = (int)(Math.random()*(maxValor-minValor+1)+minValor);
+          for (int k = 0; k < pos; k++) {
+            if (array[k/10][k%10]==valor) {
+              repetido = true;
+              break;
+            }
+          }
+        } while (!repetido);
       }
       System.out.println("\n├────────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┤");
     }

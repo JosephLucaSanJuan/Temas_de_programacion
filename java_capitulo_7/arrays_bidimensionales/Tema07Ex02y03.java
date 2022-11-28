@@ -18,7 +18,7 @@ public class Tema07Ex02y03 {
     for (int i = 0; i < 4; i++) {
       for (int j = 0; j < 5; j++) {
         //System.out.print("Introduce el número para la fila "+i+", columna "+j+": ");
-        array[i][j] = (int)(Math.random()*889)+100;//sc.nextInt();
+        array[i][j] = (int)(Math.random()*899)+100;//sc.nextInt();
       }
     }
 
