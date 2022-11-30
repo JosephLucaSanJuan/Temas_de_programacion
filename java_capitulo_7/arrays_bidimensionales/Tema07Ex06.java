@@ -51,7 +51,7 @@ public class Tema07Ex06 {
               break;
             }
           }
-        } while (!repetido);
+        } while (repetido);
       }
       System.out.println("\n├────────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┤");
     }
