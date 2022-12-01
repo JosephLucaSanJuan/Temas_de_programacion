@@ -113,7 +113,7 @@ public class Tema07Ex07 {
       }
       System.out.println();
     }
-    System.out.println(" ----------\n 0 1 2 3 4\n");
+    System.out.println(" ----------\n  0 1 2 3 4\n");
     sc.close();
   }
 }
