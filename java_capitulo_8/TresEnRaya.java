@@ -51,7 +51,7 @@ public class TresEnRaya {
 
   public static void imprimirTablero(char[][] tablero) {
     System.out.println("  ***************");
-    for (int i = 2; i <= 0; i--) {
+    for (int i = 2; i >= 0; i--) {
       System.out.printf("%s *", ""+'a'+i);
       for (int j = 0; j < 3; j++) {
         System.out.printf(" %d * ", tablero[i][j]);
@@ -59,31 +59,50 @@ public class TresEnRaya {
       System.out.println("  ***************");
     }
     System.out.println("  ***************");
-    for (int i = 0; i < tablero.length; i++) {
-      for (int j = 0; j < tablero[i]; j++) {
+    /*for (int i = 0; i < tablero.length; i++) {
+      for (int j = 0; j < tablero[i].length; j++) {
         System.out.printf("%s ", tablero[i][j]);
       }
       System.out.println("  ***************");
-    }
+    }*/
   }
 
-  /*public static void comprobarJugada(char[][] tablero) {
-    if ((tablero[0][0] = 'X') && (tablero[0][1] = 'X') && (tablero[0][2] = 'X')) {
+  public static int comprobarJugada(char[][] tablero) {
+    if ((tablero[0][0] == 'X') && (tablero[0][1] == 'X') && (tablero[0][2] == 'X')) {
       return 1;
-    } else if ((tablero[0][0] = '0') && (tablero[0][1] = '0') && (tablero[0][2] = 'X')) {
-      
-    } else if ((tablero[0][0] = '0') && (tablero[0][1] = '0') && (tablero[0][2] = '0')) {
-      
-    } else if ((tablero[0][0] = '0') && (tablero[0][1] = 'X') && (tablero[0][2] = '0')) {
-      
-    } else if ((tablero[0][0] = 'X') && (tablero[0][1] = 'X') && (tablero[0][2] = 'X')) {
-      
-    } else {
-      
-    } else {
-      
+    } else if ((tablero[0][0] == '0') && (tablero[0][1] == '0') && (tablero[0][2] == '0')) {
+      return 2;
+    } else if ((tablero[1][0] == 'X') && (tablero[1][1] == 'X') && (tablero[1][2] == 'X')) {
+      return 1;
+    } else if ((tablero[1][0] == '0') && (tablero[1][1] == '0') && (tablero[1][2] == '0')) {
+      return 2;
+    } else if ((tablero[2][0] == 'X') && (tablero[2][1] == 'X') && (tablero[2][2] == 'X')) {
+      return 1;
+    } else if ((tablero[2][0] == '0') && (tablero[2][1] == '0') && (tablero[2][2] == '0')) {
+      return 2;
+    } else if ((tablero[0][0] == 'X') && (tablero[1][0] == 'X') && (tablero[2][0] == 'X')) {
+      return 1;
+    } else if ((tablero[0][0] == '0') && (tablero[1][0] == '0') && (tablero[2][0] == '0')) {
+      return 2;
+    } else if ((tablero[0][1] == 'X') && (tablero[1][1] == 'X') && (tablero[2][1] == 'X')) {
+      return 1;
+    } else if ((tablero[0][1] == '0') && (tablero[1][1] == '0') && (tablero[2][1] == '0')) {
+      return 2;
+    } else if ((tablero[0][2] == 'X') && (tablero[1][2] == 'X') && (tablero[2][2] == 'X')) {
+      return 1;
+    } else if ((tablero[0][2] == '0') && (tablero[1][2] == '0') && (tablero[2][2] == '0')) {
+      return 2;
+    } else if ((tablero[0][0] == 'X') && (tablero[1][1] == 'X') && (tablero[2][2] == 'X')) {
+      return 1;
+    } else if ((tablero[0][0] == '0') && (tablero[1][1] == '0') && (tablero[2][2] == '0')) {
+      return 2;
+    } else if ((tablero[2][0] == 'X') && (tablero[1][1] == 'X') && (tablero[0][2] == 'X')) {
+      return 1;
+    } else if ((tablero[2][0] == '0') && (tablero[1][1] == '0') && (tablero[0][2] == '0')) {
+      return 2;
     }
-  }*/
+    return 0;
+  }/**/
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     char[][] tablero = new char[3][3];
@@ -96,6 +115,7 @@ public class TresEnRaya {
       imprimirTablero(tablero);
       marcarTirada(tablero, obtenerTirada(tablero, sc), jugador1);
       movimientos++;
+      jugadaGanadora = comprobarJugada(tablero);
       if (jugadaGanadora == 0) {
         marcarTirada(tablero, obtenerTirada(tablero, sc), jugador1);
         movimientos++;
