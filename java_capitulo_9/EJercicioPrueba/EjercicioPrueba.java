@@ -1,7 +1,7 @@
-package java_capitulo_9;
+package EJercicioPrueba;
 
 public class EjercicioPrueba {
-  public static void a() throws MiExcepcion {
+  public static void a() {
     
   }
   public static void main(String[] args) {

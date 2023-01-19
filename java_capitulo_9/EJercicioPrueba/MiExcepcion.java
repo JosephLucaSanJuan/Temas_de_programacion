@@ -1,4 +1,4 @@
-package java_capitulo_9;
+package EJercicioPrueba;
 
 public class MiExcepcion {
   
