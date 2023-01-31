@@ -36,7 +36,7 @@ public class Tema10Ej19 {
             cadena+=sinonimos.get(sinonimos.size()-1);
             System.out.println(cadena);
           } else {
-            System.out.println("No conozco sinónimos d esa palabra.");
+            System.out.println("No conozco sinónimos de esa palabra.");
           }
         } else {
           System.out.println("No conozco esa palabra");
@@ -54,6 +54,6 @@ public class Tema10Ej19 {
         sinonimos.add((String)entrada.getKey());
       }
     }
-    return null;
+    return sinonimos;
   }
 }
