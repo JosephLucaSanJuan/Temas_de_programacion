@@ -12,14 +12,18 @@ public class Tema10Ej16 {
       System.out.print("Introduce un país y te diré su capital: ");
       String pais = sc.nextLine();
       String capital = paises.getCapital(pais);
-      if(capital!=null){
-        System.out.format("La capital de %s es %s", pais, capital);
-        System.out.println();
+      if (pais.equals("salir")) {
+        salir = true;
       } else {
-        System.out.printf("No conozco ese país ¿cuál es la capital de %s?: ", pais);
-        capital = sc.nextLine();
-        paises.anade(pais, capital);
-        System.out.println("Gracias por enseñarme nuevas capitales.");
+        if(capital!=null){
+          System.out.format("La capital de %s es %s", pais, capital);
+          System.out.println();
+        } else {
+          System.out.printf("No conozco ese país ¿cuál es la capital de %s?: ", pais);
+          capital = sc.nextLine();
+          paises.anade(pais, capital);
+          System.out.println("Gracias por enseñarme nuevas capitales.");
+        }
       }
     } while (!salir);
     sc.close();
