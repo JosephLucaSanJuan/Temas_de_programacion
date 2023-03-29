@@ -24,7 +24,8 @@ public class AlumnosService {
             int id = querySet.getInt("id");
             String nombre = querySet.getString("nombre");
             String apellidos = querySet.getString("apellidos");
-            result.add(new Alumno(id, nombre, apellidos));
+            int idGrupo = querySet.getInt("idGrupo");
+            result.add(new Alumno(id, nombre, apellidos, idGrupo));
         } 
         statement.close();    
         return result;
@@ -41,16 +42,17 @@ public class AlumnosService {
         if(querySet.next()) {
             String nombre = querySet.getString("nombre");
             String apellidos = querySet.getString("apellidos");
-            result = new Alumno(id, nombre, apellidos);
+            int idGrupo = querySet.getInt("idGrupo");
+            result = new Alumno(id, nombre, apellidos, idGrupo);
         }
         statement.close();    
         return result;
     }
 
-    public long create(String nombre, String apellidos) throws SQLException{
+    public int create(String nombre, String apellidos) throws SQLException{
         Statement statement = null;
         statement = this.conn.createStatement();    
-        String sql = String.format("INSERT INTO alumnos (nombre, apellidos) VALUES ('%s', '%s')", nombre, apellidos);
+        String sql = String.format("INSERT INTO alumnos (nombre, apellidos, idGrupo) VALUES ('%s', '%s')", nombre, apellidos);
         // Ejecución de la consulta
         int affectedRows = statement.executeUpdate(sql,Statement.RETURN_GENERATED_KEYS);
         if (affectedRows == 0) {
@@ -58,7 +60,7 @@ public class AlumnosService {
         }
         try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
             if (generatedKeys.next()) {
-                long id = generatedKeys.getLong(1);
+                int id = generatedKeys.getInt(1);
                 statement.close();
                 return id;
             }
@@ -72,7 +74,7 @@ public class AlumnosService {
     public int update(int id, String nombre, String apellidos) throws SQLException{
         Statement statement = null;
         statement = this.conn.createStatement();    
-        String sql = String.format("UPDATE alumnos SET nombre = '%s', apellidos = '%s' WHERE id=%d", nombre, apellidos, id);
+        String sql = String.format("UPDATE alumnos SET nombre = '%s', apellidos = '%s', idGrupo = %d WHERE id=%d", nombre, apellidos, id);
         // Ejecución de la consulta
         int affectedRows = statement.executeUpdate(sql);
         statement.close();
@@ -82,7 +84,7 @@ public class AlumnosService {
             return affectedRows;
     }
 
-    public boolean delete(long id) throws SQLException{
+    public boolean delete(int id) throws SQLException{
         Statement statement = null;
         statement = this.conn.createStatement();    
         String sql = String.format("DELETE FROM alumnos WHERE id=%d", id);
@@ -90,5 +92,32 @@ public class AlumnosService {
         int result = statement.executeUpdate(sql);
         statement.close();
         return result==1;
+    }
+
+    public int matricular(int id, int idGrupo) throws SQLException{
+        Statement statement = null;
+        statement = this.conn.createStatement();
+        String sql = String.format("UPDATE alumnos WHERE id=%d ADD FOREIGN KEY GroupID=%d", idGrupo, id);
+        int result = statement.executeUpdate(sql);
+        statement.close();
+        return result;
+    }
+
+    public int cambiarDeGrupo(int id, int grupoNuevo) throws SQLException{
+        Statement statement = null;
+        statement = this.conn.createStatement();
+        String sql = String.format("UPDATE alumnos WHERE id=%d SET FOREIGN KEY GrupoID=%d", id, grupoNuevo);
+        int result = statement.executeUpdate(sql);
+        statement.close();
+        return result;
+    }
+
+    public int desmatricular(int id) throws SQLException{
+        Statement statement = null;
+        statement = this.conn.createStatement();
+        String sql = String.format("UPDATE alumnos WHERE id=%d REMOVE FOREIGN KEY GroupID=%d", id);
+        int result = statement.executeUpdate(sql);
+        statement.close();
+        return result;
     }
 }

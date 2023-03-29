@@ -4,8 +4,6 @@
  * 
  * @author Joseph Luca San Juan Thompson
  */
-package java_capitulo_10;
-
 import java.util.ArrayList;
 
 public class Tema10Ej02 {

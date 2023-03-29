@@ -1,4 +1,4 @@
-package java_capitulo_10.Ejercicio14;
+package Ejercicio14;
 
 import java.util.ArrayList;
 import java.util.HashMap;

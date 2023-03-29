@@ -1,4 +1,4 @@
-package java_capitulo_10.Ejercicio17;
+package Ejercicio17;
 
 public class Elemento {
   private String nombre;

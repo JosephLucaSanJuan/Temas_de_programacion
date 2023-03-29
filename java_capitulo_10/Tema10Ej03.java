@@ -4,8 +4,6 @@
  * 
  * @author Joseph Luca San Juan Thompson
  */
-package java_capitulo_10;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;

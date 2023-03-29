@@ -1,4 +1,4 @@
-package java_capitulo_10.Ejercicio12;
+package Ejercicio12;
 
 import java.util.Objects;
 

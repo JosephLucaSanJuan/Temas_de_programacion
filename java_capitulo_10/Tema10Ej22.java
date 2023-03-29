@@ -1,7 +1,5 @@
-package java_capitulo_10;
-
-import java_capitulo_10.cuentacorriente.CuentaCorriente;
-import java_capitulo_10.cuentacorriente.NotEnoughBalance;
+import cuentacorriente.CuentaCorriente;
+import cuentacorriente.NotEnoughBalance;
 
 public class Tema10Ej22 {
   public static void main(String[] args) throws NotEnoughBalance {

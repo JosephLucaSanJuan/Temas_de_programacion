@@ -1,4 +1,4 @@
-package java_capitulo_10.Ejercicio17;
+package Ejercicio17;
 
 import java.util.ArrayList;
 

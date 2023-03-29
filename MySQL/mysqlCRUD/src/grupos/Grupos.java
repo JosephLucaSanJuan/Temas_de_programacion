@@ -1,21 +1,21 @@
 package grupos;
 
 public class Grupos {
-    long id;
+    int id;
     String nombre;
     String profesor;
 
-    Grupos(long id, String nombre, String profesor) {
+    Grupos(int id, String nombre, String profesor) {
         this.id = id;
         this.nombre = nombre;
         this.profesor = profesor;
     }
 
-    public long getId() {
+    public int getId() {
         return this.id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

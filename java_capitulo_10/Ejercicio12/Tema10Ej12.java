@@ -1,4 +1,4 @@
-package java_capitulo_10.Ejercicio12;
+package Ejercicio12;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,14 +9,14 @@ public class Tema10Ej12 {
     HashMap<String, Integer> cartas = new HashMap<String, Integer>();
     int puntos = 0;
     
-    cartas.put("as", 11);
-    cartas.put("dos", 0);
-    cartas.put("tres", 10);
-    cartas.put("cuatro", 0);
-    cartas.put("cinco", 0);
-    cartas.put("seis", 0);
-    cartas.put("siete", 0);
-    cartas.put("sota", 2);
+    cartas.put("AS", 11);
+    cartas.put("2", 0);
+    cartas.put("3", 10);
+    cartas.put("4", 0);
+    cartas.put("5", 0);
+    cartas.put("6", 0);
+    cartas.put("7", 0);
+    cartas.put("soldado", 2);
     cartas.put("caballo", 3);
     cartas.put("rey", 4);
 

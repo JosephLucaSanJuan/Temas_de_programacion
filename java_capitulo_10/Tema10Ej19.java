@@ -1,5 +1,3 @@
-package java_capitulo_10;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;

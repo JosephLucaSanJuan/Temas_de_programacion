@@ -1,4 +1,4 @@
-package java_capitulo_10.cuentacorriente;
+package cuentacorriente;
 
 public class Transferencia extends Movimiento {
 

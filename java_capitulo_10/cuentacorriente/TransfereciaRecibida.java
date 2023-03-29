@@ -1,4 +1,4 @@
-package java_capitulo_10.cuentacorriente;
+package cuentacorriente;
 
 public class TransfereciaRecibida extends Transferencia {
 
@@ -8,6 +8,6 @@ public class TransfereciaRecibida extends Transferencia {
 
   @Override
   public String toString() {
-    return String.format("Transferencia recebida de %.2f € de la cuenta %s Saldo %.2f €", this.importe, this.cuenta, this.saldo);
+    return String.format("Transferencia recebida de %.2f $ de la cuenta %s Saldo %.2f $", this.importe, this.cuenta, this.saldo);
   }
 }

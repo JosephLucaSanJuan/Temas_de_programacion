@@ -1,4 +1,4 @@
-package java_capitulo_10.Ejercicio16;
+package Ejercicio16;
 
 import java.util.HashMap;
 

@@ -6,8 +6,6 @@
  * 
  * @author Joseph Luca San Juan Thompson
  */
-package java_capitulo_10;
-
 import java.util.HashMap;
 import java.util.Scanner;
 

@@ -3,8 +3,6 @@
  * 21º Guarda información sobre tipos de anfibios para luego pedirla
  * 
  */
-package java_capitulo_10;
-
 import java.util.HashMap;
 import java.util.Scanner;
 

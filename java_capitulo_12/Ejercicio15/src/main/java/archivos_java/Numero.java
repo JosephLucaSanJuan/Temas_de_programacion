@@ -8,6 +8,6 @@ public class Numero {
 
     @Override
     public String toString() {
-        return "<span>"+this.n+"</span>";
+        return "<p>"+this.n+"</p>";
     }
 }

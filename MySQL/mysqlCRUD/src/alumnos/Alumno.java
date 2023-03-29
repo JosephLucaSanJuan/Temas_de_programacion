@@ -1,24 +1,26 @@
 package alumnos;
 public class Alumno {
-    long id;
+    int id;
     String nombre;
     String apellidos;
+    int idGrupo;
  
     public Alumno(){
-        this(0,"","");
+        this(0,"","",0);
     }
 
-    public Alumno(int id, String nombre, String apellidos){
+    public Alumno(int id, String nombre, String apellidos, int idGrupo){
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
+        this.idGrupo = idGrupo;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -38,8 +40,16 @@ public class Alumno {
         this.apellidos = apellidos;
     }
 
+    public int getIdGrupo() {
+        return this.idGrupo;
+    }
+
+    public void setIdGrupo(int idGrupo) {
+        this.idGrupo = idGrupo;
+    }
+
     @Override
     public String toString() {
-        return String.format("ID: %d, Nombre: %s, Apellidos: %s", this.id, this.nombre, this.apellidos);
+        return String.format("ID: %d, Nombre: %s, Apellidos: %s, ID del Grupo: %d", this.id, this.nombre, this.apellidos, this.idGrupo);
     }
 }

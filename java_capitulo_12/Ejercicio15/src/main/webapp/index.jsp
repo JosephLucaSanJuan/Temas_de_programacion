@@ -8,8 +8,9 @@
     </head>
     <body>
         <h2>Hello World!</h2>
+        <p>Yo</p>
         <%
-            out.print(ListaNumeros.entre(1, 200));
+            System.out.print(ListaNumeros.entre(1, 200));
         %>
     </body>
 </html>

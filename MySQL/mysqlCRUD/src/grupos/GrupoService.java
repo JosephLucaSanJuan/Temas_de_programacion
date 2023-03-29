@@ -47,7 +47,7 @@ public class GrupoService {
         return result;
     }
 
-    public long create(String nombre, String profesor) throws SQLException{
+    public int create(String nombre, String profesor) throws SQLException{
         Statement statement = null;
         statement = this.conn.createStatement();    
         String sql = String.format("INSERT INTO alumnos (nombre, profesor) VALUES ('%s', '%s')", nombre, profesor);
@@ -58,7 +58,7 @@ public class GrupoService {
         }
         try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
             if (generatedKeys.next()) {
-                long id = generatedKeys.getLong(1);
+                int id = generatedKeys.getInt(1);
                 statement.close();
                 return id;
             }
@@ -82,7 +82,7 @@ public class GrupoService {
             return affectedRows;
     }
 
-    public boolean delete(long id) throws SQLException{
+    public boolean delete(int id) throws SQLException{
         Statement statement = null;
         statement = this.conn.createStatement();    
         String sql = String.format("DELETE FROM alumnos WHERE id=%d", id);

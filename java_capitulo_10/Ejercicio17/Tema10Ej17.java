@@ -4,7 +4,7 @@
  * 
  * @author Joseph Luca San Juan Thompson
  */
-package java_capitulo_10.Ejercicio17;
+package Ejercicio17;
 
 public class Tema10Ej17 {
   public static void main(String[] args) {

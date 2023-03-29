@@ -1,4 +1,4 @@
-package java_capitulo_10.cuentacorriente;
+package cuentacorriente;
 
 public class Cargo extends Movimiento {
   public Cargo(float importe, String cuenta, float saldo){
@@ -7,6 +7,6 @@ public class Cargo extends Movimiento {
 
   @Override
   public String toString(){
-    return String.format("Cargo de %.2f € Saldo: %.2f €", this.importe, this.saldo);
+    return String.format("Cargo de %.2f $ Saldo: %.2f $", this.importe, this.saldo);
   }
 }

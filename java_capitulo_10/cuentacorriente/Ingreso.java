@@ -1,4 +1,4 @@
-package java_capitulo_10.cuentacorriente;
+package cuentacorriente;
 
 public class Ingreso extends Movimiento{
   public Ingreso(float importe, String cuenta, float saldo){
@@ -7,6 +7,6 @@ public class Ingreso extends Movimiento{
 
   @Override
   public String toString(){
-    return String.format("Ingreso de %.2f € Saldo: %.2f €", this.importe, this.saldo);
+    return String.format("Ingreso de %.2f $ Saldo: %.2f $", this.importe, this.saldo);
   }
 }
