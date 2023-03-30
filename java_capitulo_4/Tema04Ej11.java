@@ -27,5 +27,6 @@ public class Tema04Ej11 {
       System.out.println(min + " minutos: " + min*60);
       System.out.println("Faltan " + (dia-tiempoInt) + " segundos hasta medianoche");
     }
+    sc.close();
   }
 }

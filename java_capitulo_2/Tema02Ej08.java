@@ -7,7 +7,7 @@ public class Tema02Ej08 {
     char tres = '%';
     char cuatro = '&';
     char cinco = '€';
-    String union = "@ $ % & €";
+    String union = ""+uno+dos+tres+cuatro+cinco;
 
     System.out.println(union);
   }

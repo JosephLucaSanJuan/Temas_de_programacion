@@ -33,5 +33,6 @@ public class Tema04Ej08 {
     } else {
       System.out.println("Esa nota no es válida");
     }
+    sc.close();
   }
 }

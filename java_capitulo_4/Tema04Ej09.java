@@ -29,5 +29,6 @@ public class Tema04Ej09 {
     } else {
       System.out.println("Esta ecuación no tiene solución.");
     }
+    sc.close();
   }
 }

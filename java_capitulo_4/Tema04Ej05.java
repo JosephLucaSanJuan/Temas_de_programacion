@@ -22,5 +22,6 @@ public class Tema04Ej05 {
     } else {
       System.out.println("x = " + (-b/a));
     }
+    sc.close();
   }
 }

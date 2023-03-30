@@ -37,7 +37,9 @@ public class Tema04Ej03 {
         System.out.println("Domingo");
         break;
       default:
+        System.out.println("Lo siento ese número no es válido");
         break;
     }
+    sc.close();
   }
 }

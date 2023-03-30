@@ -23,5 +23,6 @@ public class Tema04Ej06 {
     } else {
       System.out.println("No es posible indicar una altura.");
     }
+    sc.close();
   }
 }
