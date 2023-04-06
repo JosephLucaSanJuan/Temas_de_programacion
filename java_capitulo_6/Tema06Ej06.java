@@ -30,7 +30,7 @@ public class Tema06Ej06 {
         System.out.println("Intenta un número más pequeño. Te quedan "+(intentos-1)+" intentos");
       }
 
-      if ((intentos==0) && (numInt!=n)) {
+      if ((intentos==1) && (numInt!=n)) {
         System.out.println("Lo siento, se te han agotado los intentos");
         System.out.println("El número correcto era "+n);
       }

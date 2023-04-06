@@ -19,11 +19,11 @@ public class Tema06Ej14 {
     while (intentos!=0) {
       n = (int)(Math.random()*101);
       System.out.print("Estas pensando en el número "+n);
-      System.out.println("\n1. Si\n2.Más grande\n3. Más pequeño");
+      System.out.println("\n1. Si\n2. Más grande\n3. Más pequeño");
       respuesta = sc.nextInt();
 
       if (respuesta==1) {
-        intentos = 0;
+        intentos = 1;
         System.out.println("Programa superior, Joseph inferior");
       } else if ((respuesta==2) && (intentos != 1)) {
         System.out.println((intentos-1)+" intentos restantes. Intentaremos un número más grande.");

@@ -33,13 +33,13 @@ public class Tema06Ej07 {
     String N1 = String.valueOf(n1);
     String N2 = String.valueOf(n2);
     
-    System.out.printf("PLENO AL 15 - Local...%"+tipo1+" Visitante...%"+tipo2, (n1<=1)?n1:N1, (n2<=1)?n2:N2);
-    if (n2>1) {
+    System.out.printf("PLENO AL 15 - Local...%"+tipo1+" Visitante...%"+tipo2, (n1<=2)?n1:N1, (n2<=2)?n2:N2);
+    if (n2>2) {
       tipo2 = "s";
-      N1 = "M";
+      N2 = "M";
     }
-    if (n1>1) {
-      tipo2 = "s";
+    if (n1>2) {
+      tipo1 = "s";
       N1 = "M";
     }
   }
