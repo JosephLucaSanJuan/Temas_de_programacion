@@ -1,5 +1,3 @@
-package java_capitulo_3;
-
 import java.util.Scanner;
 
 public class Tema03Ej07 {
