@@ -41,6 +41,8 @@ public class Tema10Ej10 {
 
       if (diccionario.containsKey(palabra)) {
         System.out.format("Traducción: %s\n", diccionario.get(palabra));
+      } else if (palabra.equals("")) {
+        salir = true;
       } else {
         System.out.println("Lo siento esa palabra no esta almacenada");
       }

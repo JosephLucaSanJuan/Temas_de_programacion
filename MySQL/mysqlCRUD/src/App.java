@@ -43,8 +43,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         // Configuración de la conexión a la base de datos
-        String url = "jdbc:mysql://localhost:3306/alumno";
-        String usuario = "Joseph";
+        String url = "jdbc:mysql://localhost:3306/alumnos2";
+        String usuario = "joseph";
         String clave = "2468";
 
         ConnectionPool pool = new ConnectionPool(url, usuario, clave);
@@ -57,7 +57,7 @@ public class App {
         
         while (!salir) {
             System.out.println("Elije una opción");
-            System.out.println("1. Gestionar alumnos\n2.Gestionar grupos\n3. Gestionar matrículas\n4. Salir");
+            System.out.println("1. Gestionar alumnos\n2. Gestionar grupos\n3. Gestionar matrículas\n4. Salir");
             int op = sc.nextInt();
             int opcion = 0;
             exit = false;
